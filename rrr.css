@@ -1,0 +1,57 @@
+body{
+    background-color: #577054; 
+}
+.gallery{
+
+width :900px ;
+display: flex;
+overflow-x: scroll;
+
+}
+.gallery div {
+width: 100% ;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px ;
+    padding: 10 px ;
+    flex: none;
+
+}
+.gallery div img{
+
+    width: 100%;
+   
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+
+}
+.gallery-wrap{
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 10% auto;
+}
+#back {
+
+    width: 50px;
+    cursor: pointer;
+    margin: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#next{
+    width: 50px;
+    cursor: pointer;
+    margin: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.15);
+}
